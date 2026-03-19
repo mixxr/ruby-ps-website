@@ -1,0 +1,12 @@
+- name: Prodotti
+  link: /
+  new_window: false
+  highlight: false
+- name: La Nostra Storia
+  link: /about/
+  new_window: false
+  highlight: false
+- name: Contatti
+  link: /contatti/
+  new_window: false
+  highlight: false
