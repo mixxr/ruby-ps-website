@@ -6,10 +6,13 @@
 			</a>
 		</div>
 	{% endfor %}
-
+	{% if include.product.styles.size > 1 %}
 	<div class="style-picker">
 		{% for style in include.product.styles %}
-			<div style="background-color: {{ style.color }}" data-item-id="{{ forloop.index }}"></div>
+			<div style="background-color: {{ style.color }}" data-item-id="{{ forloop.index }}" class="tooltip">
+				<span class="tooltiptext">{{ style.name }}</span>
+			</div>
 		{% endfor %}
 	</div>
+	{% endif %}
 </div>

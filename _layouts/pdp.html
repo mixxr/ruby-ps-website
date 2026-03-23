@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="content">
+	<section class="page">
+		<div class="container">
+			<div class="product-container">
+				{% include pdp-styles.html product=page %}
+				<div class="product-details" id="add">
+					<h3>{{ page.name }}</h3>
+					{{ page.description_markdown | markdownify }}
+
+					<p>
+						<hr/>
+						<b>Ingredienti:</b> {{ page.ingredients_markdown | markdownify }}
+					</p>
+
+					<h4>${{ page.price }}</h4>
+					<div class="button">{% include snipcart-button.html product=page %}</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />

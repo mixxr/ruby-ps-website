@@ -1,7 +1,7 @@
 ---
 title: Pasticceria Sana
 hero: Pasticceria Sana
-subtitle: Solo ingredienti sani, per dolci sani
+subtitle: Solo ingredienti sani, per prodotti sani
 ---
 
 <div class="content" id="products">
@@ -9,15 +9,15 @@ subtitle: Solo ingredienti sani, per dolci sani
 		<div class="container">
 			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
 			<ul class="product-list">
-				{% for product in site.products %}
+				{%- assign colls = site.collections| where: "category", "product" | sort:"name" | reverse -%}
+				{% for collection in colls %}
 					<li>
-						{% include product-styles.html product=product %}
+						{% include product-styles.html product=collection %}
 						<div class="product-details">
-							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
+							<h4><a href="{{ collection.url }}">{{ collection.name }}</a></h4>
 							<div class="product-description">
-								{{ product.description_markdown | truncate: 45 | markdownify }}
+								{{ collection.description_markdown | truncate: 45 | markdownify }}
 							</div>
-							<p>${{ product.price }}</p>
 						</div>
 					</li>
 				{% endfor %}

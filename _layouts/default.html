@@ -61,29 +61,28 @@
 				<ul class="footer-columns">
 					<li class="about">
 						<div class="company-name">{% include logo.html %} <span>{{ site.title }}</span></div>
-						<p class="editable">Many people have the notion that enlightenment is one state. Many also believe that when it is attained, a person is forever in that state.</p>
+						<p class="editable elevator">Pasticceria Sana è la pasticceria artigianale che unisce gusto autentico e benessere quotidiano. Creiamo dolci con pochi zuccheri, ingredienti naturali e ricette curate a mano, pensate per chi vuole concedersi un piacere vero senza rinunciare alla qualità. Ogni prodotto nasce da una filosofia semplice: valorizzare la materia prima, rispettare i tempi della natura e offrire un’esperienza di dolcezza più sana, più consapevole e profondamente buona.</p>
 					</li>
 
 					<li class="footer-nav">
 						<h4>General</h4>
 						<ul>
-							<li><a href="/">Products</a></li>
-							<li><a href="/about/">Our Story</a></li>
-							<li><a href="/contact/">Contact</a></li>
+							<li><a href="/">Prodotti</a></li>
+							<li><a href="{% link about.html %}">La Nostra Storia</a></li>
+							<li><a href="{% link contact.html %}">Contatti</a></li>
 						</ul>
 					</li>
 
 					<li class="footer-nav">
-						<h4>Help</h4>
+						<h4>Supporto</h4>
 						<ul>
-							<li><a href="/shipping/">Shipping</a></li>
-							<li><a href="/returns/">Returns</a></li>
+							<li><a href="{% link shipping.html %}">Spedizioni</a></li>
+							<li><a href="{% link returns.html %}">Resi</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<h4>Contact Us</h4>
-						<p>Need help with something? <a href="/contact/">Get in touch</a>.
+						<h4>Contattaci</h4>
 						<p class="email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
 						<p><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
 
@@ -95,7 +94,7 @@
 						</div>
 					</li>
 				</ul>
-				<p class="copyright">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Template by <a href="https://cloudcannon.com">CloudCannon</a></p>
+				<p class="copyright">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc.</p>
 			</div>
 		</footer>
 		<script>

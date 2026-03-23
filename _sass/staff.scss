@@ -14,7 +14,7 @@
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	text-align: center;
-	margin: -175px 0 0 0;
+	margin: 20px 0 0 0;
 	justify-content: center;
 
 	li {

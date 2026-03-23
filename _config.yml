@@ -14,7 +14,7 @@ logo: /siteicon.png
 description: Pasticceria Prodotti ed Ingredienti Sani
 author:
   name: PasticceriaSana
-  email: pasticceriasana@example.com
+  email: pasticceriasana@gmail.com
   twitter: pasticceriasana # twitter username without the @ symbol
   phone: "+1 23456789"
 social:
@@ -26,21 +26,49 @@ social:
 # Build
 timezone: Etc/UTC
 
+collections_dir: _products
 collections:
   staff_members:
     output: false
-  products:
+  pies:
+    name: Torte Salate
+    category: product
+    url: /torte-salate/
     output: true
+    permalink: /torte-salate/:title/
+    description_markdown: >-
+      Le nostre torte salate sono realizzate con ingredienti freschi e di alta qualità, senza conservanti o additivi artificiali. Ogni torta è un'esplosione di sapore e freschezza, perfette per un pranzo leggero o una cena informale.
+    styles:
+    - name: Copertina
+      color: 'white'
+      image: /images/products/torte-salate.webp
+  cakes:
+    name: Torte Dolci
+    category: product
+    url: /torte-dolci/
+    output: true
+    description_markdown: >-
+      Le nostre torte dolci sono realizzate con ingredienti di alta qualità, senza conservanti o additivi artificiali. Ogni dolce è un'esplosione di sapore e freschezza, perfetti per concludere un pasto in bellezza o per una pausa golosa.
+    styles:
+    - name: Copertina
+      color: 'white'
+      image: /images/products/torte-dolci.jpg
+  cookies:
+    name: Biscotti
+    category: product
+    url: /biscotti/
+    output: true
+    permalink: /biscotti/:title/
+    description_markdown: >-
+      I nostri biscotti sono realizzati con ingredienti di alta qualità, senza conservanti o additivi artificiali. Ogni morso è un'esplosione di sapore e croccantezza, perfetti per accompagnare una tazza di tè o caffè.
+    styles:
+    - name: Copertina
+      color: 'white'
+      image: /images/products/biscotti.jpg
 
 permalink: pretty
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
   -
     scope:
       path: ""
