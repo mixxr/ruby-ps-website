@@ -30,7 +30,7 @@ sizes:
   - Medium (8p)
   - Large (12p)
 styles:
-  - name: All Black
+  - name: Originale
     color: '#000000'
     image: /images/products/t-fcg/00.jpg
   - name: Festa Papa'
@@ -40,7 +40,7 @@ images:
   - name: Copertina
     color: 'white'
     image: /images/products/t-fcg/00.jpg
-  - name: All Black
+  - name: Originale
     color: 'white'
     image: /images/products/t-fcg/01.jpg
   - name: Halloween

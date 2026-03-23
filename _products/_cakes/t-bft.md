@@ -28,7 +28,7 @@ sizes:
   - Medium (8p)
   - Large (12p)
 styles:
-  - name: All Black
+  - name: Originale
     color: '#000000'
     image: /images/products/t-bft/00.jpg
   - name: Natale
@@ -38,7 +38,7 @@ images:
   - name: Copertina
     color: 'white'
     image: /images/products/t-bft/00.jpg
-  - name: All Black
+  - name: Originale
     color: 'white'
     image: /images/products/t-bft/01.jpg
   - name: Halloween

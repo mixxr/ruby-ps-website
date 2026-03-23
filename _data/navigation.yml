@@ -1,14 +1,14 @@
 
-- name: Torte
+- name: Salato
   link: /torte-salate/
+  new_window: false
+  highlight: false
+- name: Dolce
+  link: /torte-dolci/
   new_window: false
   highlight: false
 - name: Biscotti
   link: /biscotti/
-  new_window: false
-  highlight: false
-- name: Dolci
-  link: /torte-dolci/
   new_window: false
   highlight: false
 - name: La Nostra Storia
