@@ -26,9 +26,8 @@ price: '18.00'
 sku: T-FCG
 stock: 10
 sizes:
-  - Small (4p)
   - Medium (8p)
-  - Large (12p)
+  - Large (12p) [+8.00]
 styles:
   - name: Originale
     color: '#000000'

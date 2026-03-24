@@ -25,8 +25,8 @@ sku: T-BFT
 stock: 10
 sizes:
   - Small (4p)
-  - Medium (8p)
-  - Large (12p)
+  - Medium (8p) [+12.00]
+  - Large (12p) [+28.00]
 styles:
   - name: Originale
     color: '#000000'

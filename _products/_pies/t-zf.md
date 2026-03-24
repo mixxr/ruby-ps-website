@@ -23,8 +23,8 @@ sku: T-ZF
 stock: 10
 sizes:
   - Small (4p)
-  - Medium (8p)
-  - Large (12p)
+  - Medium (8p)[+10.00]
+  - Large (12p)[+15.00]
 styles:
   - name: Originale
     color: '#000000'

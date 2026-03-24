@@ -20,13 +20,12 @@ ingredients_markdown: >-
   Un pizzico di sale
   liquore Strega
 garment_type:
-price: '16.00'
+price: '26.00'
 sku: T-ZCG
 stock: 10
 sizes:
-  - Small (4p)
   - Medium (8p)
-  - Large (12p)
+  - Large (12p) [+10.00]
 styles:
   - name: Originale
     color: '#000000'

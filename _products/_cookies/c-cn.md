@@ -17,8 +17,8 @@ sku: C-CN
 stock: 10
 sizes:
   - Small (12p)
-  - Medium (24p)
-  - Large (36p)
+  - Medium (24p) [+12.00]
+  - Large (36p) [+14.00]
 styles:
   - name: Originale
     color: '#000000'
