@@ -1,0 +1,76 @@
+<!-- Modal Banner -->
+ <style>
+    /* The Modal (background) */
+.dp-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.dp-modal-content {
+  background-color: #2e3842;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#dp-modal-text {
+  font-size: 18px;
+  line-height: 1.5;
+    color: #fff;
+}
+
+/* The Close Button */
+.dp-close {
+  color: #aaaaaa; 
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dp-close:hover,
+.dp-close:focus {
+  color: red;/* #000;*/
+  text-decoration: none;
+  cursor: pointer;
+}
+ </style>
+<div id="dp-modal" class="dp-modal">
+
+  <div class="dp-modal-content">
+    <span class="dp-close">&times;</span>
+    <p id="dp-modal-text">This website is for DEMO purposes only and the domain is for SALE.<br/>Questo sito web è solo a scopo dimostrativo e il dominio è disponibile per la vendita.</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("dp-modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("dp-close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+setTimeout(()=>{modal.style.display = "block"}, 3000);
+</script>
